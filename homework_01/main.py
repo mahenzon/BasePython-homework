@@ -3,22 +3,12 @@
 Функции и структуры данных
 """
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 15f3d3b4d5158969d2adf3cd7e56768ce2987b1d
 def power_numbers(NumList):
     """
     функция, которая принимает N целых чисел,
     и возвращает список квадратов этих чисел
     """
-<<<<<<< HEAD
-
     return [i**i if isinstance(i, int) else i for i in NumList]
-=======
-    
-    return [i**i if isinstance(i,int) else i for i in NumList]
->>>>>>> 15f3d3b4d5158969d2adf3cd7e56768ce2987b1d
 
 # filter types
 ODD = "odd"
@@ -36,8 +26,4 @@ def filter_numbers(NumList, condition):
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     <<< [2, 4]
     """
-<<<<<<< HEAD
-
-=======
->>>>>>> 15f3d3b4d5158969d2adf3cd7e56768ce2987b1d
     return []
