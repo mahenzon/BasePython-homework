@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 Домашнее задание #1
 Функции и структуры данных
@@ -10,6 +9,7 @@ def power_numbers(*num_list):
     функция, которая принимает N целых чисел,
     и возвращает список квадратов этих чисел
     """
+
     Result = list()
     for i in num_list:
         if isinstance(i, int):
