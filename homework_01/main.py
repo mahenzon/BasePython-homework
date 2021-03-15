@@ -3,21 +3,20 @@
 Функции и структуры данных
 """
 
-
-def power_numbers():
+def power_numbers(NumList):
     """
     функция, которая принимает N целых чисел,
     и возвращает список квадратов этих чисел
     """
-
+    
+    return [i**i if isinstance(i,int) else i for i in NumList]
 
 # filter types
 ODD = "odd"
 EVEN = "even"
 PRIME = "prime"
 
-
-def filter_numbers():
+def filter_numbers(NumList, condition):
     """
     функция, которая на вход принимает список из целых чисел,
     и возвращает только чётные/нечётные/простые числа
@@ -28,3 +27,4 @@ def filter_numbers():
     >>> filter_numbers([2, 3, 4, 5], EVEN)
     <<< [2, 4]
     """
+    return []
