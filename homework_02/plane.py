@@ -3,7 +3,7 @@
 """
 
 from vehicle import Vehicle
-#from exceptions import CargoOverload
+from exceptions import CargoOverload
 
 class Plane(Vehicle):
     """ defaults """
