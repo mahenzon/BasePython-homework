@@ -1,8 +1,8 @@
 """
 создайте класс `Car`, наследник `Vehicle`
 """
-from base import Vehicle
-from engine import Engine
+from homework02.base import Vehicle
+from homework02.engine import Engine
 
 class Car(Vehicle):
     """ defaults """
