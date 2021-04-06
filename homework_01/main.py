@@ -10,20 +10,20 @@ def power_numbers(*num_list):
     и возвращает список квадратов этих чисел
     """
 
-    Result = list()
+    result = list()
     for i in num_list:
         if isinstance(i, int):
-            Result.append(i*i)
+            result.append(i*i)
         else:
-            Result.append(i)
-    return Result
+            result.append(i)
+    return result
 
 # filter types
 ODD = "odd"
 EVEN = "even"
 PRIME = "prime"
 
-def filter_numbers(NumList, condition):
+def filter_numbers(num_list, condition):
     """
     функция, которая на вход принимает список из целых чисел,
     и возвращает только чётные/нечётные/простые числа
@@ -35,20 +35,20 @@ def filter_numbers(NumList, condition):
     """
 
     if condition == ODD:
-        Result = list(filter(lambda i: i % 2 != 0, NumList))
+        result = list(filter(lambda i: i % 2 != 0, num_list))
 
     if condition == EVEN:
-        Result = list(filter(lambda i: i % 2 == 0, NumList))
+        result = list(filter(lambda i: i % 2 == 0, num_list))
 
     if condition == PRIME:
-        Result = list()
-        for i in NumList:
+        result = list()
+        for i in num_list:
             is_prime = True
             for j in range(2, i):
                 if i % j == 0:
                     is_prime = False
                     break
             if is_prime:
-                Result.append(i)
+                result.append(i)
 
-    return Result
+    return result
