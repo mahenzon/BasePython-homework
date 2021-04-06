@@ -2,8 +2,8 @@
 создайте класс `Plane`, наследник `Vehicle`
 """
 
-from vehicle import Vehicle
-from exceptions import CargoOverload
+from homework_02.vehicle import Vehicle
+from homework_02.exceptions import CargoOverload
 
 class Plane(Vehicle):
     """ defaults """
